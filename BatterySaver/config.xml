@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profiles>
+   <profile name="Default" default="True">
+      <eventHandlers>
+         <switchToBattery>
+            <action type="KillProcess" processName="wallpaper32.exe" description="Shut Wallpaper Engine" batteryPercentMin="0" batteryPercentMax="100" />
+         </switchToBattery>
+         <switchToAc>
+            <action type="StartProcess" processName="wallpaper32.exe" workingDirectory="D:\Program Files\Wallpaper Engine" arguments="" allowMultiple="False" description="Start Wallpaper Engine" batteryPercentMin="0" batteryPercentMax="100" />
+         </switchToAc>
+         <batteryPercentIncreased />
+         <batteryPercentDecreased />
+      </eventHandlers>
+   </profile>
+   <profile name="ToggleWifi" default="False">
+      <eventHandlers>
+         <switchToBattery />
+         <switchToAc />
+         <batteryPercentIncreased />
+         <batteryPercentDecreased />
+      </eventHandlers>
+   </profile>
+</profiles>
